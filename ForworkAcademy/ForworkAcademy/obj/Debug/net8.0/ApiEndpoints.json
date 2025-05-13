@@ -1,0 +1,128 @@
+[
+  {
+    "ContainingType": "ForworkAcademy.Controllers.AdminController",
+    "Method": "AddCourse",
+    "RelativePath": "api/Admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "ForworkAcademy.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ForworkAcademy.Controllers.AdminController",
+    "Method": "Login",
+    "RelativePath": "api/Admin/admin-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "ForworkAcademy.Dto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ForworkAcademy.Controllers.ForworkController",
+    "Method": "GetCourseByCategory",
+    "RelativePath": "api/Forwork/course-by-category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ForworkAcademy.Dto.FullCourseDto, ForworkAcademy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ForworkAcademy.Controllers.ForworkController",
+    "Method": "GetCourseById",
+    "RelativePath": "api/Forwork/course-by-id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ForworkAcademy.Controllers.ForworkController",
+    "Method": "GetAllCourse",
+    "RelativePath": "api/Forwork/get-all-course",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ForworkAcademy.Controllers.ForworkController",
+    "Method": "OrderCourseByPrice",
+    "RelativePath": "api/Forwork/order-by-price",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ForworkAcademy.Models.Course, ForworkAcademy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ForworkAcademy.Controllers.ForworkController",
+    "Method": "SendPopup",
+    "RelativePath": "api/Forwork/send-popup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userPopup",
+        "Type": "ForworkAcademy.Models.UserPopup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
