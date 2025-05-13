@@ -1,5 +1,6 @@
 using ForworkAcademy.Data;
 using ForworkAcademy.Interfaces;
+using ForworkAcademy.Middlewares;
 using ForworkAcademy.Repository;
 using Microsoft.EntityFrameworkCore;
 
@@ -34,6 +35,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.MapControllers();
 
