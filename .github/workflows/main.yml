@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: test-forwork
+  AZURE_WEBAPP_NAME: Test-ForworkAcademyBack
   AZURE_WEBAPP_PACKAGE_PATH: './publish'
 
 jobs:
