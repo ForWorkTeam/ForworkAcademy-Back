@@ -31,35 +31,52 @@
 
 
 
-# Base image for runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+## Base image for runtime
+#FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+#WORKDIR /app
+#EXPOSE 8080
+#EXPOSE 8081
+#
+## Build image
+#FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+#ARG BUILD_CONFIGURATION=Release
+#WORKDIR /src
+#
+## Copy only the csproj and restore as separate step for caching
+#COPY ForworkAcademy/ForworkAcademy.csproj ./ForworkAcademy/
+#RUN dotnet restore ./ForworkAcademy/ForworkAcademy.csproj
+#
+## Copy the rest of the source code
+#COPY ForworkAcademy/ForworkAcademy/. ./ForworkAcademy/
+#WORKDIR /src/ForworkAcademy
+#
+## Build the project
+#RUN dotnet build ./ForworkAcademy.csproj -c $BUILD_CONFIGURATION -o /app/build
+#
+## Publish the project
+#FROM build AS publish
+#ARG BUILD_CONFIGURATION=Release
+#RUN dotnet publish ./ForworkAcademy.csproj -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+#
+## Final image
+#FROM base AS final
+#WORKDIR /app
+#COPY --from=publish /app/publish .
+#ENTRYPOINT ["dotnet", "ForworkAcademy.dll"]
 
-# Build image
+
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copy only the csproj and restore as separate step for caching
-COPY ForworkAcademy/ForworkAcademy.csproj ./ForworkAcademy/
+COPY ForworkAcademy/ForworkAcademy/ForworkAcademy.csproj ./ForworkAcademy/
 RUN dotnet restore ./ForworkAcademy/ForworkAcademy.csproj
 
-# Copy the rest of the source code
 COPY ForworkAcademy/ForworkAcademy/. ./ForworkAcademy/
 WORKDIR /src/ForworkAcademy
+RUN dotnet build ./ForworkAcademy.csproj -c Release -o /app/build
+RUN dotnet publish ./ForworkAcademy.csproj -c Release -o /app/publish /p:UseAppHost=false
 
-# Build the project
-RUN dotnet build ./ForworkAcademy.csproj -c $BUILD_CONFIGURATION -o /app/build
-
-# Publish the project
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish ./ForworkAcademy.csproj -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
-
-# Final image
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "ForworkAcademy.dll"]
