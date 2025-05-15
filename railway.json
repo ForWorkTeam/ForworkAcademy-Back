@@ -1,4 +1,12 @@
 {
-  "build": "dotnet publish ForworkAcademy/ForworkAcademy/ForworkAcademy.csproj -c Release -o out",
-  "start": "dotnet out/ForworkAcademy.dll"
+  "services": {
+    "web": {
+      "build": {
+        "command": "dotnet publish ForworkAcademy/ForworkAcademy/ForworkAcademy.csproj -c Release -o out"
+      },
+      "start": {
+        "command": "dotnet out/ForworkAcademy.dll"
+      }
+    }
+  }
 }
