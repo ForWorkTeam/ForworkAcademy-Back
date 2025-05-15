@@ -81,19 +81,17 @@
 #COPY --from=build /app/publish .
 #ENTRYPOINT ["dotnet", "ForworkAcademy.dll"]
 
-
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# ???????? ?????? .csproj ??????? ?? restore
-COPY ./ForworkAcademy.csproj ./ForworkAcademy.csproj
-RUN dotnet restore ./ForworkAcademy.csproj
+# ???????? .csproj deeper ????????
+COPY ./ForworkAcademy/ForworkAcademy.csproj ./ForworkAcademy/ForworkAcademy.csproj
+RUN dotnet restore ./ForworkAcademy/ForworkAcademy.csproj
 
-# ???????? ??????? ?????
-COPY . .
+# ???????? ????? deeper ????????
+COPY ./ForworkAcademy/. ./ForworkAcademy/
 
-# build ?? publish
-RUN dotnet publish ./ForworkAcademy.csproj -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish ./ForworkAcademy/ForworkAcademy.csproj -c Release -o /app/publish /p:UseAppHost=false
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
