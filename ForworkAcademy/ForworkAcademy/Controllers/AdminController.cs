@@ -1,5 +1,6 @@
 ﻿using ForworkAcademy.Data;
 using ForworkAcademy.Dto;
+using ForworkAcademy.ExceptionHandling;
 using ForworkAcademy.Interfaces;
 using ForworkAcademy.Models;
 using Microsoft.AspNetCore.Http;
@@ -24,10 +25,11 @@ namespace ForworkAcademy.Controllers
         [HttpPost("admin-login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var admin = await _dbContext.Admins.FirstOrDefaultAsync(a => a.UserName == loginDto.UserName);
-            if (admin == null || !BCrypt.Net.BCrypt.Verify(loginDto.Password, admin.PasswordHash))
+            var admin = await _dbContext.Admins.FirstOrDefaultAsync(a => a.UserName == loginDto.UserName)??
+                throw new CourseNotFoundException("veripova");
+
+            if (!BCrypt.Net.BCrypt.Verify(loginDto.Password, admin.PasswordHash))
                 return Unauthorized("Invalid credentials");
-            
 
             return Ok("Login successful");
         }

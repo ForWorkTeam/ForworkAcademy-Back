@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|c:\\users\\user\\desktop\\forworkacademy-back\\forworkacademy\\forworkacademy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|solutionrelative:forworkacademy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|c:\\users\\user\\desktop\\forworkacademy-back\\forworkacademy\\forworkacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|solutionrelative:forworkacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|c:\\users\\user\\desktop\\forworkacademy-back\\forworkacademy\\forworkacademy\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|solutionrelative:forworkacademy\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|c:\\users\\user\\desktop\\forworkacademy-back\\forworkacademy\\forworkacademy\\models\\errors\\errordetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|solutionrelative:forworkacademy\\models\\errors\\errordetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,58 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\appsettings.json",
-              "RelativeDocumentMoniker": "ForworkAcademy\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\appsettings.json",
-              "RelativeToolTip": "ForworkAcademy\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-13T12:53:13.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Program.cs",
-              "RelativeDocumentMoniker": "ForworkAcademy\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Program.cs",
-              "RelativeToolTip": "ForworkAcademy\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T12:52:33.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ErrorDetail.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Models\\Errors\\ErrorDetail.cs",
-              "RelativeDocumentMoniker": "ForworkAcademy\\Models\\Errors\\ErrorDetail.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Models\\Errors\\ErrorDetail.cs",
-              "RelativeToolTip": "ForworkAcademy\\Models\\Errors\\ErrorDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T12:52:04.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExceptionMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Middlewares\\ExceptionMiddleware.cs",
-              "RelativeDocumentMoniker": "ForworkAcademy\\Middlewares\\ExceptionMiddleware.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Middlewares\\ExceptionMiddleware.cs",
-              "RelativeToolTip": "ForworkAcademy\\Middlewares\\ExceptionMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T12:51:05.146Z",
-              "EditorCaption": ""
             }
           ]
         }

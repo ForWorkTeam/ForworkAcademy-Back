@@ -55,7 +55,7 @@ namespace ForworkAcademy.Repository
 
         public async Task<FullCourseDto> GetCourseById(int courseId)
         {
-            var result = await (from course in _forworkDbContext.Course
+            /*var result = await (from course in _forworkDbContext.Course
                                 join category in _forworkDbContext.Category
                                     on course.CategoryId equals category.Id
                                 join lecturer in _forworkDbContext.Lecturer
@@ -71,11 +71,24 @@ namespace ForworkAcademy.Repository
                                     LecturerName = lecturer.Name,
                                     LecturerLastName = lecturer.LastName,
                                     LecturerDescription = lecturer.Description
-                                }).FirstOrDefaultAsync();
+                                }).FirstOrDefaultAsync();*/
 
-            if (result == null)
+            var course = await _forworkDbContext.Course.Include(c => c.Category).Include(c => c.Lecturer)
+                .FirstOrDefaultAsync(c => c.Id == courseId);
+            if (course== null)
                 throw new CourseNotFoundException("Course Not Found");
 
+            var result = new FullCourseDto
+            {
+                Id = course.Id,
+                CourseName = course.CourseName,
+                CategoryName = course.Category.CategoryName,
+                CourseDescription = course.CourseDescription,
+                Price = course.Price,
+                LecturerName = course.Lecturer.Name,
+                LecturerLastName = course.Lecturer.LastName,
+                LecturerDescription = course.Lecturer.Description
+            };
             return result;
         }
 
