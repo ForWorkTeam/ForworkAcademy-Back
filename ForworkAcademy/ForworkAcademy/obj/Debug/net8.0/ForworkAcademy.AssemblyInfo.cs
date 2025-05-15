@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ForworkAcademy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6eddd57822ea5f72feb06fd826bc35142d58457b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8187572db8c8e4b2bb8e1e6e8343b886b21b4104")]
 [assembly: System.Reflection.AssemblyProductAttribute("ForworkAcademy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ForworkAcademy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
