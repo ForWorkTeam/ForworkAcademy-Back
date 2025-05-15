@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|c:\\users\\user\\desktop\\forworkacademy-back\\forworkacademy\\forworkacademy\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{985025C2-EF20-4BA2-AA7C-C13E75CBAAAB}|ForworkAcademy\\ForworkAcademy.csproj|solutionrelative:forworkacademy\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Dockerfile",
+              "RelativeDocumentMoniker": "ForworkAcademy\\Dockerfile",
+              "ToolTip": "C:\\Users\\User\\Desktop\\ForworkAcademy-Back\\ForworkAcademy\\ForworkAcademy\\Dockerfile",
+              "RelativeToolTip": "ForworkAcademy\\Dockerfile",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-15T16:54:37.728Z",
+              "EditorCaption": ""
             }
           ]
         }
