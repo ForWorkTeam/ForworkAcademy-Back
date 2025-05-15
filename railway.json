@@ -1,0 +1,4 @@
+{
+  "build": "dotnet publish ForworkAcademy/ForworkAcademy/ForworkAcademy.csproj -c Release -o out",
+  "start": "dotnet out/ForworkAcademy.dll"
+}
